@@ -26,7 +26,7 @@ export const App = () => {
             if(ip === ""){
                 throw new Error
             }
-            const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_API_KEY}&ipAddress=${ip}`
+            const url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_OFcaFfvPP2kN9yMo23FdcO7x0gTgL&ipAddress=${ip}`
             console.log(url)
             const result = await axios.get(url)
             const data = await result.data
