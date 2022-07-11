@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.col-ip{
+    @apply flex flex-col text-center md:text-left md:border-r border-gray-400 px-4 gap-2 md:gap-4 overflow-hidden
+}
+
+.title{
+    @apply text-gray-400 uppercase font-semibold text-xs tracking-widest;
+}
+
+.info{
+    @apply text-gray-900 text-base md:text-2xl font-medium
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+  }
